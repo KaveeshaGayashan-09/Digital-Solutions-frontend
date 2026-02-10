@@ -1,0 +1,150 @@
+.orders-page {
+  padding: 2rem 0 4rem;
+  min-height: calc(100vh - 80px);
+}
+
+.orders-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.order-header:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.order-info h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.order-date {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.order-meta {
+  text-align: right;
+}
+
+.order-status {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.order-status.completed {
+  background: rgba(79, 172, 254, 0.2);
+  color: var(--success-green);
+}
+
+.order-status.pending {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.order-status.failed {
+  background: rgba(245, 87, 108, 0.2);
+  color: var(--accent-pink);
+}
+
+.order-total {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.order-details {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.order-details h4 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.order-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.order-item:last-child {
+  margin-bottom: 0;
+}
+
+.order-item-info {
+  margin-bottom: 1.25rem;
+}
+
+.order-item-info h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.order-item-info p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.order-item-credentials h5 {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.credential-box {
+  background: rgba(102, 126, 234, 0.1);
+  border-left: 3px solid var(--accent-purple);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.credential-box:last-child {
+  margin-bottom: 0;
+}
+
+.credential-box p {
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.credential-box strong {
+  color: var(--text-primary);
+}
+
+.credential-box code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: var(--success-green);
+  font-size: 0.875rem;
+}
