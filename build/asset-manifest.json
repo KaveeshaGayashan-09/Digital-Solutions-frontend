@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Digital-Solutions-frontend/static/css/main.f90218cf.css",
-    "main.js": "/Digital-Solutions-frontend/static/js/main.bc7e0084.js",
+    "main.js": "/Digital-Solutions-frontend/static/js/main.a58aec3b.js",
     "index.html": "/Digital-Solutions-frontend/index.html",
     "main.f90218cf.css.map": "/Digital-Solutions-frontend/static/css/main.f90218cf.css.map",
-    "main.bc7e0084.js.map": "/Digital-Solutions-frontend/static/js/main.bc7e0084.js.map"
+    "main.a58aec3b.js.map": "/Digital-Solutions-frontend/static/js/main.a58aec3b.js.map"
   },
   "entrypoints": [
     "static/css/main.f90218cf.css",
-    "static/js/main.bc7e0084.js"
+    "static/js/main.a58aec3b.js"
   ]
 }
