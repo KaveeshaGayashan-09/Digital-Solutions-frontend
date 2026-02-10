@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import api from '../utils/api';
 import ProductCard from '../components/ProductCard';
 import './Products.css';
@@ -11,11 +11,7 @@ const Products = () => {
 
   const categories = ['all', 'streaming', 'education', 'productivity', 'gaming', 'other'];
 
-  useEffect(() => {
-    fetchProducts();
-  }, [category, search]);
-
-  const fetchProducts = async () => {
+  const fetchProducts = useCallback(async () => {
     try {
       setLoading(true);
       const params = {};
@@ -29,7 +25,11 @@ const Products = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [category, search]);
+
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
 
   return (
     <div className="products-page">
